@@ -51,7 +51,7 @@
             </ul>
           </div>
         </div>
-        <div class="menu-btn">
+        <div class="menu-btn" id="menu-btn">
           <i class="fas fa-bars"></i>
     
         </div>
@@ -120,11 +120,11 @@
                       placeholder="Your Transaction id *" value="" required="" />
                   </div>
                   <div class="app-form-group">
-                    <input class="file-upload-input" type="file" name="image" required="" onchange="readURL(this)" accept="image/*">
+                    <input class="file-upload-input" type="file" name="image" onchange="readURL(this)" accept="image/*">
                   </div>
 
                   <div class="app-form-group">
-                    <input type="submit" name="submit" class="btnSubmit btn-block" value="SUBMIT" />
+                    <input type="submit" id="submit" name="submit" class="btnSubmit btn-block" value="SUBMIT" />
                   </div>
                 </form>
               </div>
@@ -184,13 +184,25 @@
     const scriptURL = 'https://script.google.com/macros/s/AKfycbw5ta-Gl8CUb0wbaSlsAhGH3beNwXlHM0Iki7S0JldwqvpbAteGQPBWwnTrG7QKgy8k4g/exec'
     const form = document.forms['google-sheet']
     form.addEventListener('submit', e => {
-      e.preventDefault()
+      e.preventDefault();
+      document.getElementById("submit").disabled = true;
       fetch(scriptURL, { method: 'POST', body: new FormData(form) })
-        .then(response => alert("Thanks for the Registration..! We will contact you for further information..."))
+        .then(response => {
+          alert("Thanks for the Registration..! We will contact you for further information...");
+          document.getElementById("submit").disabled = false;
+        })
         .catch(error => console.error('Error!', error.message))
     })
   </script>
+  <script>
+    const menu = document.querySelector(".menu");
+    const menuBtn = document.querySelector(".menu-btn");
 
+    //Toggle the navbar menu on click Open/Close 
+    menuBtn.addEventListener("click", () => {
+      menu.classList.toggle('nav-toggle');
+    });
+  </script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </body>
