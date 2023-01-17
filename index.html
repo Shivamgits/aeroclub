@@ -23,16 +23,21 @@
       <nav>
         <div id="home" class="container">
           <div>
-            <a href="index.html">
-            <img class="top-logo" src="Images/aero-logo-white.png" alt="Logo" class="logo">
-            </a>
+            <div style="display: flex;gap: 2vw; align-items: center;">
+              <a href="index.html">
+              <img class="top-logo" src="Images/aero-logo-white.png" alt="Logo" class="logo">
+              </a>
+              <div style="width: 50px; height: 100%;" class="hbtu_button">
+                <img src="Images/HBTU_logo.png" style="width: 100%; object-fit: cover;" alt="">
+              </div>
+            </div>
             <div class="menu">
               <ul>
                 <li>
                   <a href="index.html">HOME</a>
                 </li>
                 <li>
-                  <a href="about.html">ABOUT </a>
+                  <a href="#">ABOUT </a>
                 </li>
                 <li>
                   <a href="#projects">PROJECTS</a>
@@ -52,6 +57,11 @@
                 </li>
               </ul>
               </div>
+              <!-- <div> -->
+                <div style="width: 50px;" class="hbtu_dt">
+                  <img src="Images/HBTU_logo.png" style="width: 100%; object-fit: cover;" alt="">
+                </div>
+              <!-- </div> -->
               </div>
           <div class="menu-btn">
             <i class="fas fa-bars"></i>
@@ -61,12 +71,12 @@
       </nav>
     </header>
 
-    <section>
+    <section class="background_landing" style="position: relative;margin-bottom: 0;height: fit-content;">
       
       <div class="intro">
        
-        <div>
-          <img class="bg1" src="Images/bg2.jpg">
+        <!-- <div> -->
+          <!-- <img class="bg1" src="Images/bg2.jpg"> -->
           <h1>
             Welcome to Aeroclub
           </h1>
@@ -75,7 +85,7 @@
           <a href="https://www.youtube.com/@aeroclubhbtu5991" target="_blank">
             <h3>Explore</h3>
           </a>
-        </div>
+        <!-- </div> -->
         
 
       </div>
@@ -123,8 +133,7 @@
     </div>
    </section>
     
-    <section>
-        <!-- Swiper -->
+    <!-- <section>
       <div class="swiper aboutSwiper">
         <div class="swiper-wrapper">
           <div class="swiper-slide">
@@ -180,9 +189,9 @@ and maintaining their own RC planes.</p>
         </div>
         <div class="swiper-pagination"></div>
       </div>
-    </section>
+    </section> -->
 	
-	<section class="services">
+	<section class="services"  style="display: none;">
 	  <div class="container">
 	  <div class="service">
 	    <i class="fas fa-plane fa-4x"></i>
@@ -207,15 +216,15 @@ and maintaining their own RC planes.</p>
 	  </div>
 	</section>
 </div>
-	
+<!-- 	
     <div id="projects" class="heading">
       <h1 class="wow animate_animated animate_fadeInUp">
       Projects
       <span>Training</span>
       </h1>
-    </div>
-    <section class="planes">
-      <!-- Swiper -->
+    </div> -->
+    <!-- <section class="planes">
+     
       <div class="swiper planeSwiper">
         <div class="swiper-wrapper">
           <div class="swiper-slide">
@@ -241,9 +250,9 @@ and maintaining their own RC planes.</p>
         <div class="swiper-button-prev"></div>
         <div class="swiper-pagination"></div>
       </div>
-    </section>
+    </section> -->
 
-    <section class="contact">
+    <section class="contact" style="display: none;">
       <div id="team" class="heading">
         <h1 class="wow animate_animated animate_fadeInUp">
         Our world-class team
@@ -365,13 +374,13 @@ and maintaining their own RC planes.</p>
         </div>    
       </section>
       
-      <div class="heading">
+      <div class="heading" style="display: none;">
         <h1 class="wow animate_animated animate_fadeInUp">
         Past Glimpse
         <span>Our Memories</span>
         </h1>
       </div>
-      <section class="planes">
+      <section class="planes" style="display: none;">
         <!-- Swiper -->
         <div class="swiper planeSwiper">
           <div class="swiper-wrapper">
@@ -451,7 +460,7 @@ and maintaining their own RC planes.</p>
       </section>
 
 
-    <section class="contact">
+    <section class="contact" style="display: none;">
       <div id="learn" class="heading">
         <h1 class="wow animate_animated animate_fadeInUp">
       Fly, dream, create, explore, soar.
@@ -461,10 +470,25 @@ and maintaining their own RC planes.</p>
 <p>"Don't miss out on the fun, become a member today!"</p>      <a href="contact.html" class="btn btn-primary">Contact Us</a>
       <a href="form.html" class="btn btn-secondary">Registration</a>
     </section>
-	
+	<section class="responsive_warning" style="display: flex; margin-left: 5vw; margin-right: 5vw; padding-top: 0;padding-bottom: 0;border-radius: 8px;border: 1px solid grey;">
+    <div class="responsive_warning__img_container" style="width: 50vw; display: flex;align-items: center;">
+      <img style="width: 100%;object-fit: cover;" src="Images/troubleshoot.png" alt="">
+    </div>
+    <div>
+      <h3 style="font-size: 2rem; color: tomato;"> ⚠️ This Site is under construction and coming soon !</h3>
+      <p style="width: 88%;">Hold on tight, because we're about to take you on a 
+        journey you won't forget! 
+        Our website is currently undergoing some major renovations and updates to bring you the 
+        best possible experience. We're putting the finishing touches on everything, so please check back 
+        soon to see the amazing changes we've made. 
+        Trust us, it'll be worth the wait! In the meantime, 
+        follow us on social media for sneak peeks and updates on our progress. See you soon!
+      </p>
+    </div>
+  </section>
 	<footer>
-	  <img class="logo2" src="Images/aero-logo-white.png" alt="logo">
-	  <div class="menu">
+	  <img  style="display: none;" class="logo2" src="Images/aero-logo-white.png" alt="logo">
+	  <div class="menu"  style="display: none;">
 		  <ul>
 			<li class="main-link"><a href="about.html">About Us</a></li>
 		  </ul>
@@ -496,13 +520,13 @@ and maintaining their own RC planes.</p>
 		</div>
 	  <div class="footer-bottom">
 	    <div class="container">
-		  <a href="#">Private Policy</a>
+		  <a href="#" class="hide_on_mobile">Private Policy</a>
 		<div>
-		  <a href="#"><img src="Images/aero-logo-white.png" class="logo" alt="logo"></a>
+		  <a href="#" style="display: flex;justify-content: center; align-items: center;"><img src="Images/aero-logo-white.png" class="logo" alt="logo"></a>
 		  <p>&#169; <span class="year"></span> Aeroclub HBTU Kanpur.</p>
       <p>&#169 Powered by Harsh Kumar &amp Anup Gupta</p>
 		</div>
-		<a href="#">Terms &amp; Conditions</a>
+		<a href="#" class="hide_on_mobile">Terms &amp; Conditions</a>
 		</div>
 	  </div>
 	</footer>
